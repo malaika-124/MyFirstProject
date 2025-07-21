@@ -13,20 +13,22 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false ,
       home: Scaffold(
       body: Center(
-        child:Container(
-            height: 300,
-            width: 250,decoration: BoxDecoration(
-            color: Colors.orange,
-            shape: BoxShape.rectangle,
-            border: Border.all(color: Colors.black54,
-              width:10,
-              style: BorderStyle.solid,)
-        ) ,
+        child :ClipRRect(
+         borderRadius:BorderRadius.circular(15),
+            child: Container(
+              height:600,
+              width:600,color:Colors.black ,
+                child:Image.asset('lib/images/polo.png' ,
 
-            child: Text("SUSHIMATATA"),
-            ) ) ),
 
+                    ) ),
+          ),
+        ),
+      ),
       ) ;
+
+
+
 
   }
 }
